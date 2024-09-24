@@ -2,7 +2,8 @@ console.log("Hello World!\n==========\n");
 
 // Exercise 1 Section
 console.log("EXERCISE 1:\n==========\n");
-for (let i = 0; i < 100; i++)
+
+for (let i = 1; i <= 100; i++)
 {
     if (i % 2 !== 0)
     {
@@ -22,18 +23,17 @@ for (let i = 1; i < 100; i++)
     {
         console.log('FIZZBUZZ');
     }
-    else 
+    else if (i % 3 == 0)
     {
-        if (i % 3 == 0)
-        {
-            console.log('FIZZ');
-        }
-
-        if (i % 5 == 0)
-        {
-            console.log('BUZZ');
-        }
-
+        console.log('FIZZ');
+    }
+    else if (i % 5 == 0)
+    {
+        console.log('BUZZ');
+    }
+    else
+    {
+        console.log(`${i} no fizz nor buzz.`)
     }
     
 }
@@ -43,20 +43,26 @@ for (let i = 1; i < 100; i++)
 //while loop
 console.log("EXERCISE 3:\n==========\n");
 
-let i = 1;
+let k = 1;
 
-while (i <= 100) {
-    let output = "";
-
-if (i % 3 == 0) {
-    output += "FIZZ";
-}
-if (i % 5 == 0) {
-    output += "BUZZ";
-}
-
-console.log(`${i} ${output}`);
-i++;
+while (k <= 100) {
+    if (k % 3 == 0 && k % 5 == 0)
+        {
+            console.log('FIZZBUZZ');
+        }
+        else if (k % 3 == 0)
+        {
+            console.log('FIZZ');
+        }
+        else if (k % 5 == 0)
+        {
+            console.log('BUZZ');
+        }
+        else
+        {
+            console.log(`${k} no fizz nor buzz`);
+        }
+        k++;
 
 }
 
@@ -65,19 +71,24 @@ i++;
 let x = 1;
 
 do {
-    let output = "";
-
-    if(x % 3 == 0) {
-        output += "FIZZ";
-    }
-
-    if(x % 5 == 0) {
-        output += "BUZZ";
-    }
-
-    console.log(`${x} ${output}`);
-
-    x++;
+    if (x % 3 == 0 && x % 5 == 0)
+        {
+            console.log('FIZZBUZZ');
+        }
+        else if (x % 3 == 0)
+        {
+            console.log('FIZZ');
+        }
+        else if (x % 5 == 0)
+        {
+            console.log('BUZZ');
+        }
+        else
+        {
+            console.log(`${x} no fizz nor buzz.`)
+        }
+        x++;
+    
 } while (x <= 100);
 
 
